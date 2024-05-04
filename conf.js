@@ -29,7 +29,9 @@ jsproxy_config({
     'mysite': {
       label: '当前站点',
       lines: {
-        [location.host]: 1,
+        'b.007.workers.dev': 1,
+        'b.lulu.workers.dev': 1,
+        'b.jsproxy.workers.dev': 1,
       }
     },
     // 该节点用于加载大体积的静态资源
@@ -52,13 +54,14 @@ jsproxy_config({
   /**
    * 默认节点
    */
-  node_default: 'cfworker',
-  // node_default: /jsproxy-demo\.\w+$/.test(location.host) ? 'demo-hk' : 'mysite',
+  // node_default: 'cfworker',
+  node_default: /jsproxy-demo\.\w+$/.test(location.host) ? 'demo-hk' : 'mysite',
 
   /**
    * 加速节点
    */
-  node_acc: 'cfworker',
+  // node_acc: 'cfworker',
+  node_acc: 'mysite',
 
   /**
    * 静态资源 CDN 地址
