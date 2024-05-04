@@ -31,14 +31,13 @@ jsproxy_config({
     'mysite': {
       label: '当前站点',
       lines: {
-        // [location.host]: 1,
-        'jsproxy.linzjian666.workers.dev': 1,
+        [location.host]: 1,
       }
     },
     // 该节点用于加载大体积的静态资源
     'cfworker': {
       label: 'cfworker',
-      hidden: false,
+      hidden: true,
       lines: {
         // 收费版（高权重）
         //'node-cfworker-2.etherdream.com': 4,
