@@ -31,7 +31,8 @@ jsproxy_config({
     'mysite': {
       label: '当前站点',
       lines: {
-        [location.host]: 1,
+        // [location.host]: 1,
+        'jsproxy.linzjian666.workers.dev': 1,
       }
     },
     // 该节点用于加载大体积的静态资源
