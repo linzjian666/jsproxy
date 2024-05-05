@@ -1,0 +1,4 @@
+[[redirects]]
+  from = "/*"
+  to = "https://jsproxy.linzjian666.workers.dev/"
+  status = 200
