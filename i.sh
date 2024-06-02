@@ -5,9 +5,12 @@
 JSPROXY_VER=0.1.0
 OPENRESTY_VER=1.15.8.1
 
-SRC_URL=https://raw.githubusercontent.com/EtherDream/jsproxy/$JSPROXY_VER
-BIN_URL=https://raw.githubusercontent.com/EtherDream/jsproxy-bin/master
-ZIP_URL=https://codeload.github.com/EtherDream/jsproxy/tar.gz
+SRC_URL=https://raw.githubusercontent.com/linzjian666/jsproxy/$JSPROXY_VER
+BIN_URL=https://raw.githubusercontent.com/linzjian666/jsproxy-bin/master
+ZIP_URL=https://codeload.github.com/linzjian666/jsproxy/tar.gz
+# SRC_URL=https://raw.githubusercontent.com/EtherDream/jsproxy/$JSPROXY_VER
+# BIN_URL=https://raw.githubusercontent.com/EtherDream/jsproxy-bin/master
+# ZIP_URL=https://codeload.github.com/EtherDream/jsproxy/tar.gz
 
 SUPPORTED_OS="Linux-x86_64"
 OS="$(uname)-$(uname -m)"
