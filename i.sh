@@ -80,7 +80,7 @@ gen_cert() {
   fi
 
   log "安装 acme.sh 脚本 ..."
-  curl https://raw.githubusercontent.com/Neilpang/acme.sh/master/acme.sh | INSTALLONLINE=1  sh
+  su - jsproxy -c "curl https://raw.githubusercontent.com/Neilpang/acme.sh/master/acme.sh | INSTALLONLINE=1  sh"
 
   local acme=~/.acme.sh/acme.sh
 
